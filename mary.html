@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Rhyme Generator></title>
+    <style>
+        button{
+            width: 105px;
+            height: 50px;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Rhyme Generator</h1>
+   <div> <button onclick="maryHad()">Mary Had</button>
+    <button onclick="littleLamb()">Little Lamb</button>  
+    <button onclick="fleece()">Fleece</button>
+    <button onclick="lineBreak()">Line Break</button>      
+    </div>
+    <br>
+   <div> <button onclick="displayRhyme()">Display</button>
+    <button onclick="clearRhyme()">Clear</button> 
+</div> 
+    
+    <script>
+        let rhyme="";
+        
+        function maryHad(){
+            rhyme+="Mary had a ";
+        }
+        function littleLamb(){
+            rhyme+="Little Lamb, ";
+        }
+        function fleece(){
+            rhyme+="whose fleece was white as snow";
+        }
+        function displayRhyme(){
+             alert (rhyme);
+        }
+        function clearRhyme(){
+             rhyme="";
+        }
+        function lineBreak(){
+             rhyme+="\n";
+        }
+        
+    </script>
+</body>
+</html>
